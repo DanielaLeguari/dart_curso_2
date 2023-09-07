@@ -5,10 +5,15 @@ void main() {
   //coleção => assumem valores unicos
   Set<String> registrosVisitados = <String>{};
   registrosVisitados = registrarDestinos("São Paulo", registrosVisitados);
-  registrosVisitados = registrarDestinos("Rio de Janeiro", registrosVisitados);
-  registrosVisitados = registrarDestinos("Santa Catarina", registrosVisitados);
-  registrosVisitados = registrarDestinos("São Paulo", registrosVisitados);
   print(registrosVisitados);
+
+  Map<String, dynamic> registrarPrecos ={};
+  registrarPrecos["São Paulo"] = 1200;
+  registrarPrecos["Rio"] = 1500;
+  registrarPrecos["Nova Iorque"] = "Muito caro";
+
+  print(registrarPrecos);
+  
 }
 
  Set<String> registrarDestinos(String destino, Set<String> banco){
