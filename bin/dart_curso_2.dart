@@ -1,21 +1,22 @@
-import 'package:dart_curso_2/dart_curso_2.dart' as dart_curso_2;
 
 void main() {
-  escolherMeioLocomocao(0);
-  escolherMeioTransporteEnum(Transporte.skate);
+  // escolherMeioTransporte(Transporte.skate);
+  
+  //coleção => assumem valores unicos
+  Set<String> registrosVisitados = <String>{};
+  registrosVisitados = registrarDestinos("São Paulo", registrosVisitados);
+  registrosVisitados = registrarDestinos("Rio de Janeiro", registrosVisitados);
+  registrosVisitados = registrarDestinos("Santa Catarina", registrosVisitados);
+  registrosVisitados = registrarDestinos("São Paulo", registrosVisitados);
+  print(registrosVisitados);
 }
 
-void escolherMeioLocomocao(int locomocao) {
-  if (locomocao == 0) {
-    print("Vou de CARRO para a aventura");
-  } else if (locomocao == 1) {
-    print("Vou de BIKE para a aventura");
-  } else {
-    print("Vou de AVIAO para a aventura");
-  }
+ Set<String> registrarDestinos(String destino, Set<String> banco){
+  banco.add(destino);
+  return banco;
 }
 
-void escolherMeioTransporteEnum(Transporte locomocao) {
+void escolherMeioTransporte(Transporte locomocao) {
   switch (locomocao) {
     case Transporte.carro:
       print("Vou de CARRO para a aventura");
@@ -33,3 +34,4 @@ void escolherMeioTransporteEnum(Transporte locomocao) {
 }
 
 enum Transporte { carro, bike, andando, skate, aviao, patins, trem }
+
