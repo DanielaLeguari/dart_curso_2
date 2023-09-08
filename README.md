@@ -24,3 +24,8 @@
 
 ## Maps
 <p>Também conhecido como Dicionário em outras linguagens, essa estrutura faz associação de chave e valor.</p>
+
+
+## Var e dynamic
+
+<p>O var é apenas um artifício para que não precisemos definir o tipo na declaração, e sim na inicialização da variável. Só para selecionar. Não na declaração, mas na inicialização, de acordo com o que inicializamos. Já o dynamic não tem nada a ver. Você está criando uma variável do tipo dynamic, que pode mudar de tipo durante a execução do programa.</p>
