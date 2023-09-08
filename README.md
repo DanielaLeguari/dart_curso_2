@@ -29,3 +29,15 @@
 ## Var e dynamic
 
 <p>O var é apenas um artifício para que não precisemos definir o tipo na declaração, e sim na inicialização da variável. Só para selecionar. Não na declaração, mas na inicialização, de acordo com o que inicializamos. Já o dynamic não tem nada a ver. Você está criando uma variável do tipo dynamic, que pode mudar de tipo durante a execução do programa.</p>
+
+## Encapsulamento
+
+<p> É o gerenciamento de permissões</p>
+
+### Private
+
+<p> Precisa de uma liberação para ser alterado ou lido.</p>
+
+### Public 
+
+<p>Todo dado que pode ser acessado e alteradp livremente por qualquer pessoas. Respeitando o escopo</p>
